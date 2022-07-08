@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Fiche d'intervention</title>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script type="text/javascript" src='js/jquery-1.11.3.min.js'></script>
+    <script type="text/javascript" src='js/data.js'></script>
+    <script type="text/javascript" src="js/style.js"></script>
+    <script type="text/javascript" src="js/Tablet-2.0.js"></script>
+</head>
+
+<body id="main_page">
+<div class="body">
+    <div class="sidenav clear-fix">
+        <div class="logo u-l">
+            <img src="img/logo.png">
+        </div>
+        <div class="sideBtn u-r">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="sideInfos">
+            <ul>
+                <li>
+                    <h3>Informations d'intervention</h3>
+                </li>
+                <li>
+                    <h3>Nature de l'intervention</h3>
+                </li>
+                <li>
+                    <h3>Satisfaction & Signature</h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <form>
+        <div class="g-container">
+            <fieldset class="u-clearfix">
+                <legend><strong>Information d'intervention</strong></legend>
+                <div class="g-info">
+                    <div class="details">
+                        <ul>
+                            <li class="u-clearfix">
+                                <h3>CodePostal</h3>
+                                <div class="u-r">
+                                    <input type="text" name="codePostal" class="codePostal" placeholder="Merci d'entrer le code postal du centre">
+                                </div>
+                            </li>
+                            <li class="u-clearfix">
+                                <h3>Société</h3>
+                                <div class="u-r">
+                                    <select name="societe" class="societe">
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="u-clearfix">
+                                <h3>Centre</h3>
+                                <div class="u-r">
+                                    <select name="centre" class="centre">
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="u-clearfix">
+                                <h3>Nom Technicien</h3>
+                                <div class="u-r">
+                                    <select name="technicien" class="technicien">
+                                        <option hidden>--Merci de séléctionner un Technicien--</option>
+                                        <option>Pierog Eliott</option>
+                                        <option>Boucetta Mansour</option>
+                                        <option>Serre Henri</option>
+                                        <option>Fournier Christophe</option>
+                                        <option>Tobi Mourad</option>
+                                    </select>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="g-info u-r">
+                    <div class="details">
+                        <ul>
+                            <li class="u-clearfix">
+                                <h3>Date</h3>
+                                <div class="u-r">
+                                    <input type="date" name="date" class="date">
+                                </div>
+                            </li>
+                            <li class="u-clearfix">
+                                <h3>Heure Arrivée</h3>
+                                <div class="u-r">
+                                    <input type="time" name="time_arrive">
+                                </div>
+                            </li>
+                            <li class="u-clearfix">
+                                <h3>Heure Départ</h3>
+                                <div class="u-r">
+                                    <input type="time" name="time_depart">
+                                </div>
+                            </li>
+                            <li class="u-clearfix">
+                                <h3>Pause (minute)</h3>
+                                <div class="u-r">
+                                    <input type="number" name="rest">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </fieldset>
+
+
+            <fieldset class="u-clearfix nature">
+                <legend><strong>Nature Invervention</strong></legend>
+                <h2 class="price u-r"><i>(100€ HT/heure - Maxi 500€ HT/jour)</i></h2>
+                <div>
+                    <h2>Actions Effectuées</h2>
+                    <div class="actions">
+                        <div>
+                            <input type="text" class="action" id="action">
+                            <input type="button" class="add" value="Ajouter" id="addNature">
+                        </div>
+                        <ul id="actionList">
+                            <li>
+                                <div class="actionAdded">
+                                    <h3>hello</h3>
+                                    <div><a href="javascript:;">supprimer</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>A Refacturer</h2>
+                    <div class="actions">
+                        <div>
+                            <input type="text" class="action" id="actionRef">
+                            <input type="button" class="add" value="Ajouter" id="addRef">
+                        </div>
+                        <ul id="RefList">
+                            <li>
+                                <div class="actionAdded">
+                                    <h3>hello</h3>
+                                    <div><a href="javascript:;">supprimer</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="signature">
+                <legend><strong>Signature</strong></legend>
+                <div class="declaration">
+                    <h3>Je soussigné(e) Madame/Monsieur,</h3>
+                    <h3>Déclare avoir reçu une copie de ce bon d'intervention. Je recevrai une facture correspondante à l'intervention réalisée ci-dessus.
+                        J'atteste que le technicien a quitté mon centre en laissant les matériels informatiques et installations pleinement fonctionnels.
+                    </h3>
+                </div>
+                <ul id="domain">
+                    <li class="active">
+                        Audio<input type="checkbox">
+                    </li>
+                    <li>
+                        Assistante<input type="checkbox">
+                    </li>
+                    <li>
+                        Gérant<input type="checkbox">
+                    </li>
+                    <li>
+                        Autres<input type="checkbox">
+                    </li>
+                </ul>
+
+                <div class="touch-pad">
+                    <h2>Signature du centre</h2>
+                    <div  class="signature-pad" id="signature_client">
+                    </div>
+                    <div class="btn-clear clear-canvas">
+                        <input type="button" value="Effacer">
+                    </div>
+                </div>
+                <div class="touch-pad">
+                    <h2>Signature du technicien</h2>
+                    <div  class="signature-pad" id="signature_technicien">
+                    </div>
+                    <div class="btn-clear clear-canvas">
+                        <input type="button" value="Effacer">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="satisfaction">
+                <legend>Satisfaction</legend>
+                <h2>Nous vous invitons à évaluer la qualité de notre intervention:</h2>
+                <div class="range">
+                    <input type="range" min="1" max="10" value="1" class="slider" id="slider">
+                </div>
+                <div class="result">
+                    <h2 id="note">1</h2>
+                    <div><img src="img/unhappy.png"></div>
+                </div>
+            </fieldset>
+            <div class="submit">
+                <input type="submit">
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
