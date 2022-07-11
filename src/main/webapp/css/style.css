@@ -1,0 +1,324 @@
+body{
+    background: #efeeec;
+}
+.sidenav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 14vw;
+    background: cadetblue;
+    display: inline-block;
+}
+.logo{
+    margin-top: 2vh;
+    margin-left: 1vw;
+    width: 8vw;
+    display: inline-block;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.sideBtn{
+    margin-top: 2vh;
+    margin-right: 1vw;
+    width: 3vw;
+    cursor: pointer;
+}
+.sideBtn li{
+    width: 3vw;
+    height: 1vh;
+    background: aliceblue;
+    border-radius: 15px;
+}
+.sideBtn li+li{
+    margin-top: 5px;
+}
+
+.sideInfos{
+    margin-top: 22vh;
+    margin-left: 1vw;
+    width: 12vw;
+    height: 250px;
+    font-size: 1.6vw;
+    color: aliceblue;
+}
+.sideInfos ul li{
+    padding: 5px ;
+    width: 11vw;
+    height: 9vh;
+    border: 2px solid aliceblue;
+    overflow: hidden;
+    cursor: pointer;
+}
+.sideInfos ul li+li{
+    margin-top: 40px;
+}
+.g-container{
+    position: relative;
+    left: 14.5vw;
+    width: 84vw;
+    height: 50vh;
+    display: inline-block;
+}
+.g-info{
+    position: relative;
+    margin: 2vh 1vw;
+    width: 39vw;
+    height: 46vh;
+    border: 2px solid #ccc;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.details{
+    position: absolute;
+    left: 5%;
+    top: 3vh;
+    width: 100%;
+}
+.details ul li+li{
+    margin-top: 6vh;
+}
+.details ul li h3{
+    width: 14vw;
+    height: 5vh;
+    font-size: 2vw;
+    display: inline-block;
+}
+.details ul li div{
+    margin-right: 10%;
+    width: 50%;
+    height: 4.5vh;
+    border: 2px solid cornflowerblue;
+    border-radius: 10px;
+}
+.details ul li div select{
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.7vw;
+    cursor: pointer;
+}
+.details ul li div input{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.7vw;
+    cursor: pointer;
+}
+.codePostal{
+    border-radius: 10px;
+}
+
+.nature{
+    height: 150vh;
+}
+.nature div+div{
+    margin-top: 5vh;
+}
+
+.price{
+    font-size: 2vw;
+}
+.nature div h2{
+    position: relative;
+    left: 2vw;
+    top: 1vh;
+    font-size: 2.3vw;
+}
+.actions{
+    position: relative;
+    top: 15px;
+    left: 2vw;
+    width: 78vw;
+    height: 60vh;
+    border: 2px solid #ccc;
+}
+.action{
+    margin-top: 4vh;
+    margin-left: 3vw;
+    padding-left: 12px;
+    width: 55vw;
+    height: 6vh;
+    font-size: 1.7vw;
+    background: white;
+    border-radius: 15px;
+}
+.add{
+    margin-left: 3vw;
+    width: 10vw;
+    height: 6vh;
+    color: white;
+    font-size: 1.8vw;
+    border:1px solid #cccccc;
+    border-radius: 15px;
+    background: #5fabad;
+    cursor: pointer;
+}
+
+.actions ul{
+    margin-left: 3vw;
+    margin-top: 3vh;
+    overflow: hidden;
+}
+.actions ul li+li{
+    margin-top: 2vh;
+}
+.actionAdded{
+    color: white;
+    background: hotpink;
+    display: inline-block;
+    border-radius: 15px;
+}
+.actionAdded h3{
+    margin-left: 0.5vw;
+    font-size: 1.3vw;
+    display: inline-block;
+}
+.actionAdded div{
+    margin-left: 3vw;
+    margin-right: 0.5vw;
+    height: 4vh;
+    font-size: 1.5vw;
+    display: inline-block;
+}
+
+
+.declaration{
+    margin: 2vh;
+    font-size: 1.5vw;
+}
+.signature ul{
+    margin: 2vh auto;
+    width: 60vw;
+    font-size: 2vw;
+}
+.signature ul li{
+    display: inline-block;
+}
+.signature ul li+li{
+    margin-left: 8vw;
+}
+.signature ul li input{
+    margin-left: -0.3vw;
+    zoom: 2;
+    cursor: pointer;
+}
+
+.touch-pad{
+    position: relative;
+    margin-top: 8vh;
+    margin-left: 2vh;
+    font-size: 1.5vw;
+}
+.signature-pad{
+    margin: 2vh auto;
+    width:56vw;
+    height:40vh;
+    border: #016487 solid 2px;
+    background: rgb(220,220,220);
+}
+
+.signature-pad .-tablet,
+.signature-pad .-tablet-container,
+.signature-pad .-canvas-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.btn-clear{
+    position: absolute;
+    top: 38vh;
+    width: 10vw;
+    height: 8vh;
+    background: white;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 20px;
+}
+.btn-clear input{
+    cursor: pointer;
+    font-size: 2vw;
+    border-radius: 20px;
+}
+
+.satisfaction h2{
+    margin-left: 2vw;
+}
+.range{
+    margin: 3vh auto;
+    width: 80vw;
+    height: 6vh;
+}
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #016487; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #016487; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.result{
+    position: relative;
+    margin: 2vh auto;
+    width: 40vw;
+    height: 10vh;
+}
+.result h2{
+    position: absolute;
+    left: -5vw;
+    width: 20vw;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: right;
+    font-size: 3vw;
+}
+.result div{
+    position: absolute;
+    left: 20vw;
+    width: 20vw;
+    height: 10vh;
+}
+.result div img{
+    margin-left: 2vw;
+    width: 10vh;
+}
+
+.submit{
+    margin: 5vh auto;
+    width: 20vw;
+    height: 10vh;
+    background: #58b2b4;
+    border-radius: 50px;
+}
+.submit input{
+    color: white;
+    font-size: 3vw;
+    cursor: pointer;
+}
