@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3585935 */
+  src: url('../fonts/iconfont.woff2?t=1660309411265') format('woff2'),
+       url('../fonts/iconfont.woff?t=1660309411265') format('woff'),
+       url('../fonts/iconfont.ttf?t=1660309411265') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shanchu2:before {
+  content: "\e600";
+}
+

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+    <title>Fiche d'intervention</title>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/Normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src='js/plugins/zepto.js'></script>
+    <script type="text/javascript" src="js/plugins/touch.js"></script>
+    <script type="text/javascript" src="js/plugins/animate.js"></script>
+    <script type="text/javascript" src="js/plugins/zepto.animate.alias.js"></script>
+    <script type="text/javascript" src="js/plugins/flexible.js"></script>
+    <script type="text/javascript" src="js/plugins/fastclick.js"></script>
+</head>
+
+
+<body>
+<nav class="sidenav clear-fix" id="sidenav">
+    <div class="logo u-l">
+        <img src="img/logo.png" id="logo">
+    </div>
+    <div class="sideBtn u-r" id="sideBtn">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="sideInfos" id="sideInfos">
+        <ul>
+
+            <li class="menu" id="menu1">
+                <h3>Informations d'intervention</h3>
+            </li>
+            <li class="menu" id="menu2">
+                <h3>Nature de l'intervention</h3>
+            </li>
+            <li class="menu" id="menu3">
+                <h3>Satisfaction & Signature</h3>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="pad">
+</div>
+
+<section>
+    <form action="" method="post" id="fiche">
+        <ul class="title">
+            <li>
+                <div><img src="img/img.png"></div>
+            </li>
+            <li>
+                <h2><strong>FICHE INTERVENTION</strong></h2>
+            </li>
+            <li>
+                <div>
+                    N°
+                </div>
+                <div class="id">
+                    <input type="text" id="numInter" name="idFiche" readonly>
+                </div>
+            </li>
+        </ul>
+
+
+
+        <fieldset class="u-clearfix information">
+            <legend><strong>Information/Intervention</strong></legend>
+            <div class="g-info">
+                <div class="details">
+                    <ul>
+                        <li class="u-clearfix detail">
+                            <h3>CodePostal</h3>
+                            <div class="u-r">
+                                <input type="number" name="codePostal" class="codePostal"
+                                       placeholder="Merci d'entrer le code postal du centre">
+                            </div>
+                        </li>
+                        <li class="u-clearfix detail">
+                            <h3>Société</h3>
+                            <div class="u-r">
+                                <select name="societe" class="societe">
+                                    <option hidden>--Merci de séléctionner une société--</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="u-clearfix detail">
+                            <h3>Centre</h3>
+                            <div class="u-r">
+                                <select name="centre" class="centre">
+                                    <option hidden>--Merci de séléctionner un centre--</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="u-clearfix detail">
+                            <h3>Technicien</h3>
+                            <div class="u-r">
+                                <select name="technicien" class="technicien">
+                                    <option hidden>--Merci de séléctionner un technicien--</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="g-info u-r">
+                <div class="details">
+                    <ul>
+                        <li class="u-clearfix detail">
+                            <h3>Date</h3>
+                            <div class="u-r">
+                                <input type="date" name="date" class="date">
+                            </div>
+                        </li>
+                        <li class="u-clearfix detail">
+                            <h3>Heure Arrivée</h3>
+                            <div class="u-r">
+                                <input type="time" name="time_arrive" id="timeStart">
+                            </div>
+                        </li>
+                        <li class="u-clearfix detail">
+                            <h3>Heure Départ</h3>
+                            <div class="u-r">
+                                <input type="time" name="time_depart" id="timeEnd">
+                            </div>
+                        </li>
+                        <li class="u-clearfix detail">
+                            <h3>Pause (minute)</h3>
+                            <div class="u-r">
+                                <input type="number" name="rest" id="rest">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </fieldset>
+
+
+        <fieldset class="u-clearfix nature">
+            <legend><strong>Nature Invervention</strong></legend>
+            <h2 class="priceInfo u-r"><i>(100€ HT/heure - Maxi 500€ HT/jour)</i></h2>
+            <div>
+                <h2>Actions Effectuées</h2>
+                <div class="actions">
+                    <div class="etalonnage">
+                        <input type="checkbox"> Etalonnage(Merci de cocher si plus d'une cabine )
+                    </div>
+                    <div class="nbCabine">
+                        <select class="cabine" name="qte">
+                            <option hidden></option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" class="action" id="action">
+                    </div>
+                    <div class="add">
+                        <input type="button" class="addBtn" value="Ajouter" id="addNature">
+                    </div>
+                    <ul id="actionList">
+                    </ul>
+                </div>
+            </div>
+            <input type="text" id="acts" name="actionList" style="display: none">
+
+            <div>
+                <h2>A Refacturer</h2>
+                <div class="actions">
+                    <div>
+                        <input list="articles" class="action" id="actionRef">
+                        <datalist id="articles">
+                        </datalist>
+                    </div>
+                    <div class="add addRef">
+                        <input type="button" class="addBtn" value="Ajouter" id="addRef">
+                    </div>
+                    <ul id="RefList">
+                    </ul>
+                </div>
+            </div>
+            <input type="text" id="refs" name="refList" style="display: none">
+        </fieldset>
+
+        <fieldset class="price u-clearfix">
+            <legend><strong>Prix</strong></legend>
+            <ul class="priceDetail">
+                <li class="u-clearfix">
+                    <h2>Intervention:</h2>
+                    <p class="u-r inter"></p>
+                </li>
+                <li class="u-r u-clearfix">
+                    <h2>Etalonnage:</h2>
+                    <p class="u-r eta"></p>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset class="signature">
+            <legend><strong>Signature</strong></legend>
+            <div class="declaration">
+                <h3>Je soussigné(e) Madame/Monsieur,</h3>
+                <h3>Déclare avoir reçu une copie de ce bon d'intervention. Je recevrai une facture correspondante à
+                    l'intervention réalisée ci-dessus.
+                    J'atteste que le technicien a quitté mon centre en laissant les matériels informatiques et
+                    installations pleinement fonctionnels.
+                </h3>
+            </div>
+            <div class="domain-container">
+                <select name="domain" class="domain" id="domain">
+                    <option hidden>-- Merci de selectionner votre poste --</option>
+                    <option>Audio</option>
+                    <option>Assistante</option>
+                    <option>Gérant</option>
+                    <option>Autres</option>
+                </select>
+            </div>
+
+
+            <div class="touch-pad">
+                <h2>Signature du centre</h2>
+                <div class="signature-pad" id="signature_client">
+                </div>
+                <div class="btn-clear clear-canvas-client">
+                    <input type="button" value="Effacer">
+                </div>
+            </div>
+            <div class="touch-pad">
+                <h2>Signature du technicien</h2>
+                <div class="signature-pad" id="signature_technicien">
+                </div>
+                <div class="btn-clear clear-canvas-tech">
+                    <input type="button" value="Effacer">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="satisfaction">
+            <legend>Satisfaction</legend>
+            <h2>Nous vous invitons à évaluer la qualité de notre intervention:</h2>
+            <div class="range">
+                <input type="range" min="1" max="10" value="8" class="slider" id="slider" name="satisfaction">
+            </div>
+            <div class="result">
+                <h2 id="note">8</h2>
+                <div><img src="img/happy.png"></div>
+            </div>
+        </fieldset>
+
+        <div class="submit">
+            <input type="button" value="Envoyer" onsubmit="return false">
+        </div>
+
+        <input type="text" id="articlesAdded" name="articlesAdded" style="display: none">
+        <input type="text" id="actions" name="actions" style="display: none">
+        <input type="text" id="client" name="signClient" style="display: none">
+        <input type="text" id="tech" name="signTech" style="display: none">
+
+    </form>
+</section>
+<script>
+    if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function () {
+            FastClick.attach(document.body);
+        }, false);
+    }
+</script>
+<script type="text/javascript" src="js/plugins/Tablet-2.0.js"></script>
+<script type="text/javascript" src="js/content/style.js"></script>
+<script type="text/javascript" src="js/content/numFiche.js"></script>
+<script type="text/javascript" src="js/content/information.js"></script>
+<script type="text/javascript" src="js/content/nature.js"></script>
+<script type="text/javascript" src="js/content/prix.js"></script>
+<script type="text/javascript" src="js/content/submit.js"></script>
+</body>
+</html>
