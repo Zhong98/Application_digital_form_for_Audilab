@@ -50,7 +50,7 @@ public class LoginSucceed extends HttpServlet {
         cookie.setMaxAge(1800);
         resp.addCookie(cookie);
 
-        //Créer un record pour occuper une place pour éviter deux fiches qui portent le même numéro. S'il y a un record est null, insérer les données dans le record
+        //Créer un record occupe une place pour éviter deux fiches qui portent le même numéro. 
         InsertData.insertData();
 
         resp.sendRedirect("http://10.37.15.110:8080/content.html");
