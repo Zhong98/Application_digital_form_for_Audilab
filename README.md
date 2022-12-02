@@ -1,2 +1,2 @@
 Application Mobile pour Audilab
-Adapter l'écran iPad
+#Adapter l'écran iPad
